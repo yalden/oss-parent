@@ -222,6 +222,14 @@
   <profiles>
     <profile>
       <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+          </plugin>
+        </plugins>
+      </build>
       <distributionManagement>
         <repository>
           <id>ossrh</id>

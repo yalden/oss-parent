@@ -5,7 +5,7 @@
 
   <groupId>com.ycourlee.oss</groupId>
   <artifactId>oss-parent</artifactId>
-  <version>1-SNAPSHOT</version>
+  <version>1</version>
   <packaging>pom</packaging>
   <name>oss parent</name>
   <description>Ycourlee Oss parent</description>
@@ -38,6 +38,11 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  <scm>
+    <url>http://github.com/yalden/oss-parent</url>
+    <connection>scm:git:git://github.com/yalden/oss-parent.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/yalden/oss-parent.git</developerConnection>
+  </scm>
   <developers>
     <developer>
       <id>yalden</id>
@@ -246,6 +251,17 @@
           <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
       </distributionManagement>
+    </profile>
+    <profile>
+      <id>version</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>versions-maven-plugin</artifactId>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
   </profiles>
 

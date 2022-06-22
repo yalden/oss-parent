@@ -5,7 +5,7 @@
 
   <groupId>com.ycourlee.oss</groupId>
   <artifactId>oss-parent</artifactId>
-  <version>2</version>
+  <version>3</version>
   <packaging>pom</packaging>
   <name>oss parent</name>
   <description>Ycourlee Oss parent</description>
@@ -30,6 +30,7 @@
     <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
     <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
     <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+    <skipAsciidoc>true</skipAsciidoc>
     <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
   </properties>
   <url>https://github.com/yalden/oss-parent</url>
@@ -47,7 +48,7 @@
   </scm>
   <developers>
     <developer>
-      <id>yalden</id>
+      <id>yooonn</id>
       <email>ycourlee@qq.com</email>
       <roles>
         <role>author</role>
@@ -110,6 +111,8 @@
           </dependencies>
           <configuration>
             <sourceDocumentName>${doc.name}.adoc</sourceDocumentName>
+            <!-- or user asciidoctor.skip -->
+            <skip>${skipAsciidoc}</skip>
             <attributes>
               <icons>font</icons>
             </attributes>

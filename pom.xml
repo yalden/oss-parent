@@ -5,7 +5,7 @@
 
   <groupId>com.ycourlee.oss</groupId>
   <artifactId>oss-parent</artifactId>
-  <version>3</version>
+  <version>4</version>
   <packaging>pom</packaging>
   <name>oss parent</name>
   <description>Ycourlee Oss parent</description>

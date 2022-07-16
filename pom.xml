@@ -33,7 +33,7 @@
     <skipAsciidoc>true</skipAsciidoc>
     <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
   </properties>
-  <url>https://github.com/yalden/oss-parent</url>
+  <url>https://github.com/yoooonn/oss-parent</url>
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
@@ -42,9 +42,9 @@
     </license>
   </licenses>
   <scm>
-    <url>http://github.com/yalden/oss-parent</url>
-    <connection>scm:git:git://github.com/yalden/oss-parent.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/yalden/oss-parent.git</developerConnection>
+    <url>http://github.com/yoooonn/oss-parent</url>
+    <connection>scm:git:git://github.com/yoooonn/oss-parent.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/yoooonn/oss-parent.git</developerConnection>
   </scm>
   <developers>
     <developer>

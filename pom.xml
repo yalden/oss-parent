@@ -29,6 +29,7 @@
     <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
     <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
     <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+    <repo.mirror.enabled>true</repo.mirror.enabled>
     <skipAsciidoc>true</skipAsciidoc>
     <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
   </properties>
@@ -281,33 +282,52 @@
         </plugins>
       </build>
     </profile>
+    <profile>
+      <id>repo-mirror</id>
+      <activation>
+        <property>
+          <name>repo.mirror.enabled</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <!-- Repo or Mirror -->
+      <repositories>
+        <repository>
+          <id>public</id>
+          <name>aliyun nexus</name>
+          <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+          <layout>default</layout>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>ossrh</id>
+          <name>Sonatype Repository</name>
+          <url>https://s01.oss.sonatype.org/content/repositories/releases</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>ossrh-snapshot</id>
+          <name>Sonatype Repository</name>
+          <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
   </profiles>
-
-  <!-- Repo or Mirror -->
-  <repositories>
-    <repository>
-      <id>public</id>
-      <name>aliyun nexus</name>
-      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>sonatype-repo-s</id>
-      <name>Sonatype Repository</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-    </repository>
-  </repositories>
 </project>

@@ -4,7 +4,7 @@
 
   <groupId>com.ycourlee.oss</groupId>
   <artifactId>oss-parent</artifactId>
-  <version>6-SNAPSHOT</version>
+  <version>5</version>
   <packaging>pom</packaging>
   <name>oss parent</name>
   <description>Ycourlee Oss parent</description>
@@ -44,7 +44,7 @@
     <url>http://github.com/yoooonn/oss-parent</url>
     <connection>scm:git:git://github.com/yoooonn/oss-parent.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/yoooonn/oss-parent.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v5</tag>
   </scm>
   <developers>
     <developer>

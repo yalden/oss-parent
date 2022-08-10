@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.ycourlee.oss</groupId>
   <artifactId>oss-parent</artifactId>
-  <version>4-SNAPSHOT</version>
+  <version>5</version>
   <packaging>pom</packaging>
   <name>oss parent</name>
   <description>Ycourlee Oss parent</description>
@@ -45,6 +44,7 @@
     <url>http://github.com/yoooonn/oss-parent</url>
     <connection>scm:git:git://github.com/yoooonn/oss-parent.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/yoooonn/oss-parent.git</developerConnection>
+    <tag>v5</tag>
   </scm>
   <developers>
     <developer>
@@ -148,9 +148,9 @@
                   <pdf-fontsdir>${main.basedir}/src/theme/fonts</pdf-fontsdir>
                   <pdf-style>custom</pdf-style>
                   <icons>font</icons>
-                  <pagenums/>
-                  <toc/>
-                  <idprefix/>
+                  <pagenums />
+                  <toc />
+                  <idprefix />
                   <idseparator>-</idseparator>
                 </attributes>
               </configuration>
